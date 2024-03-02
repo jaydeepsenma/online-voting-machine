@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>ONLINE VOTING SYSTEM</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <style>
+        #link{
+            text-decoration: none;
+
+        }
+        #link:hover{
+            color: green;
+        }
+        #cont{
+            border: 2px solid black;
+            margin-top: 85px;
+            margin-left:380px ;
+            margin-right: 380px;
+            padding-top: 40px;
+            padding-bottom: 15px;
+            border-radius: 25px;
+            background-color: blanchedalmond;
+            
+        }
+        #drop{
+            border: 2px solid green;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            padding-left: 20px;
+            border-radius: 12px;
+        }
+        #drop:hover{
+            background-color: wheat;
+            color: black;
+
+        }
+        .input{
+            border: 2px solid green;
+            background-color: black;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        .input:hover{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <div id="headersection" >
+    <h1>ONLINE VOTING SYSTEM </h1>
+    </div>
+    <hr style="border:2px solid green">
+    
+    <div id="body section">
+    <form action="api/login.php" method="POST">
+        <div id="cont">
+        <h2>LOGIN</h2>
+        <input class="input"  type="number" name="mobile" placeholder="Enter mobile"><br><br>
+        <input class="input" type="password" name="password" placeholder="Enter password"><br><br>
+        <select id="drop"  name="role">
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+        </select><br><br>
+        <button id="loginbtn" type="submit">login</button><br><br>
+        New user? <a id="link" href="routs/register.html">Register here</a> 
+    </div>
+
+
+    </form>
+</div>
+</center>
+
+</body>
+
+
+</html>
